@@ -10,7 +10,7 @@ import ProfileDropdown from './ProfileDropdown';
 import SearchDropdown from './SearchDropdown';
 import TopbarSearch from './TopbarSearch';
 import AppsDropdown from './AppsDropdown';
-import userImage from 'assets/images/users/avatar-1.jpg';
+import userImage from 'assets/images/users/avatar-1.png';
 import logoSmDark from 'assets/images/logo_sm_dark.png';
 import logoSmLight from 'assets/images/logo_sm.png';
 import logo from 'assets/images/logo-light.png';
@@ -74,10 +74,10 @@ const Topbar = ({ hideLogo, navCssClasses, openLeftMenuCallBack, topbarDark }: T
                 {!hideLogo && (
                     <Link to="/" className="topnav-logo">
                         <span className="topnav-logo-lg">
-                            <img src={logo} alt="logo" height="16" />
+                            <img src={logo} alt="logo" height="46" />
                         </span>
                         <span className="topnav-logo-sm">
-                            <img src={topbarDark ? logoSmLight : logoSmDark} alt="logo" height="16" />
+                            <img src={topbarDark ? logoSmLight : logoSmDark} alt="logo" height="46" />
                         </span>
                     </Link>
                 )}
@@ -85,15 +85,6 @@ const Topbar = ({ hideLogo, navCssClasses, openLeftMenuCallBack, topbarDark }: T
                 <ul className="list-unstyled topbar-menu float-end mb-0">
                     <li className="notification-list topbar-dropdown d-xl-none">
                         <SearchDropdown />
-                    </li>
-                    <li className="dropdown notification-list topbar-dropdown">
-                        <LanguageDropdown />
-                    </li>
-                    <li className="dropdown notification-list">
-                        <NotificationDropdown notifications={notifications} />
-                    </li>
-                    <li className="dropdown notification-list d-none d-sm-inline-block">
-                        <AppsDropdown />
                     </li>
                     <li className="notification-list">
                         <button
@@ -107,8 +98,8 @@ const Topbar = ({ hideLogo, navCssClasses, openLeftMenuCallBack, topbarDark }: T
                         <ProfileDropdown
                             userImage={userImage}
                             menuItems={profileMenus}
-                            username={'Dominic Keller'}
-                            userTitle={'Founder'}
+                            username={'Gabriel Crispim'}
+                            userTitle={'Fundador'}
                         />
                     </li>
                 </ul>

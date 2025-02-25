@@ -28,7 +28,7 @@ const Confirm2 = () => {
                 </p>
                 <form>
                     <div className="mb-0 d-grid text-center">
-                        <Link to="/account/login2" className="btn btn-primary">
+                        <Link to="/intranet/account/login2" className="btn btn-primary">
                             <i className="mdi mdi-home me-1"></i> {t('Back to Home')}{' '}
                         </Link>
                     </div>

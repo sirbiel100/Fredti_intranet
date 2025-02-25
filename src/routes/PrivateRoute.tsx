@@ -19,16 +19,16 @@ const PrivateRoute = ({ component: RouteComponent, roles, ...rest }: PrivateRout
     const api = new APICore();
 
     /**
-     * not logged in so redirect to login page with the return url
+     * not logged in so redirect to login2 page with the return url
      */
     if (api.isUserAuthenticated() === false) {
-        return <Navigate to={'/account/login'} state={{ from: location }} replace />;
+        return <Navigate to={'/intranet/account/login2'} state={{ from: location }} replace />;
     }
 
     // check if route is restricted by role
     if (roles && roles.indexOf(loggedInUser.role) === -1) {
         // role not authorised so redirect to home page
-        return <Navigate to={{ pathname: '/' }} />;
+        return <Navigate to={{ pathname: '/intranet' }} />;
     }
 
     return <RouteComponent />;

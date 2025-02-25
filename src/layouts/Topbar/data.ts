@@ -83,12 +83,12 @@ const profileMenus: ProfileOption[] = [
     {
         label: 'Lock Screen',
         icon: 'mdi mdi-lock-outline',
-        redirectTo: '/account/lock-screen',
+        redirectTo: '/intranet/account/lock-screen2',
     },
     {
         label: 'Logout',
         icon: 'mdi mdi-logout',
-        redirectTo: '/account/logout',
+        redirectTo: '/intranet/account/logout2',
     },
 ];
 

@@ -18,7 +18,7 @@ const BottomLink = () => {
         <footer className="footer footer-alt">
             <p className="text-muted">
                 {t('Already have account?')}{' '}
-                <Link to={'/account/login2'} className="text-muted ms-1">
+                <Link to={'/intranet/account/login2'} className="text-muted ms-1">
                     <b>{t('Log In')}</b>
                 </Link>
             </p>
@@ -32,7 +32,7 @@ const Register2 = () => {
 
     return (
         <>
-            {userSignUp ? <Navigate to={'/account/confirm2'} /> : null}
+            {userSignUp ? <Navigate to={'/intranet/account/confirm2'} /> : null}
 
             <AccountLayout2 bottomLinks={<BottomLink />}>
                 <h4 className="mt-0">{t('Free Sign Up')}</h4>

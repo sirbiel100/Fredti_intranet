@@ -1,6 +1,6 @@
 {
-  "short_name": "Hyper React",
-  "name": "Hyper React - A responsive bootstrap 5 admin template",
+  "short_name": "Intranet",
+  "name": "Intranet - A solução para sua empresa",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +8,7 @@
       "type": "image/x-icon"
     }
   ],
-  "start_url": ".",
+  "start_url": "intranet",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

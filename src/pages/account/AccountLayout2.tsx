@@ -23,14 +23,14 @@ const AccountLayout2 = ({ bottomLinks, children }: AccountLayoutProps) => {
                     <Card.Body>
                         {/* logo */}
                         <div className="auth-brand text-center text-lg-start">
-                            <Link to="/" className="logo-dark">
+                            <Link to="/intranet" className="logo-dark">
                                 <span>
-                                    <img src={LogoDark} alt="" height="18" />
+                                    <img src={LogoDark} alt="" height="64" />
                                 </span>
                             </Link>
-                            <Link to="/" className="logo-light">
+                            <Link to="/intranet" className="logo-light">
                                 <span>
-                                    <img src={LogoLight} alt="" height="18" />
+                                    <img src={LogoLight} alt="" height="64" />
                                 </span>
                             </Link>
                         </div>
